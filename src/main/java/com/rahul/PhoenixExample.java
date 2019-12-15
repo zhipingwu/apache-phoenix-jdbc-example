@@ -15,7 +15,7 @@ public class PhoenixExample {
             // Connect to the database
             System.out.println("Before Connection....");
             Class.forName("org.apache.phoenix.queryserver.client.Driver");
-            connection = DriverManager.getConnection("jdbc:phoenix:thin:url=http://localhost:8765;serialization=PROTOBUF");
+            connection = DriverManager.getConnection("jdbc:phoenix:thin:url=http://centos:8765;serialization=PROTOBUF");
             System.out.println("Connection created....");
 
             // Create a JDBC statement
